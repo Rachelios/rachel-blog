@@ -1,13 +1,17 @@
 ---
-title: "About me"
+title: "About Rachel"
 template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I currently work as a Business Intelligence Analyst. Previously I went to Foreign Trade University in Vietnam for Bachelor Degree, then University of Essex in United Kingdom for Master Degree.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+I self learnt Python and Machine Learning via different platforms.
+
+![Misty taste of moonshine, teardrops in my eyes. ](/media/image-2.jpg)
+
+*Besides data science and data storytelling, I also like contemporary art and travelling.*
+
+Having lived in Vietnam, Singapore, United Kingdom and now Malaysia, I understand English, Vietnamese and French.
