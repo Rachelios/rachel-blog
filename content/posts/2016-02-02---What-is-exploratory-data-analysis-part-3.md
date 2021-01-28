@@ -1,19 +1,20 @@
 ---
-title: "What is Exploratory Data Analysis? (Part 3/3)"
-date: "2020-02-07T22:40:32.169Z"
-template: "post"
+template: post
+title: What is Exploratory Data Analysis? (Part 3/3)
+slug: what-is-exploratory-data-analysis-part-3
+socialImage: /media/image-0.jpg
 draft: false
-slug: "what-is-exploratory-data-analysis-part-3"
-category: "Data"
+date: 2020-02-07T22:40:32.169Z
+description: "We will cover the third elements of EDA: exploring relationships
+  between variables (univariate/ bivariate) by revisiting the Super Heroes
+  dataset in this post."
+category: Data
 tags:
-  - "Data Analysis"
-  - "Data Science"
-  - "Python"
-  - "Visualisation"
-description: "We will cover the third elements of EDA: exploring relationships between variables (univariate/ bivariate) by revisiting the Super Heroes dataset in this post."
-socialImage: "/media/image-0.jpg"
+  - Data Analysis
+  - Data Science
+  - Python
+  - Visualisation
 ---
-
 ## Quick recap from my previous posts
 
 At an attempt to serve the article as an extensive crash course on some of the most foundational and expository concepts of EDA, I have thus ended up in a lengthy piece of work ?.
@@ -22,14 +23,13 @@ So I have split this into 3 parts so that you can through this bit by bit.
 
 In the last post, we went over the first two points of:
 
-+ Understanding variables
-+ Cleaning up the dataset
-+ Exploring relationships between variables
+* Understanding variables
+* Cleaning up the dataset
+* Exploring relationships between variables
 
 We will cover the third elements of EDA: exploring relationships between variables (univariate/ bivariate) by revisiting the Super Heroes dataset in this post.
 
 Now hold my hand and let’s dive into it!
-
 
 ## Correlation Matrix
 
@@ -47,6 +47,7 @@ sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, annot=True
                   cmap=sns.diverging_palett(220, 20, as_cmap=True))
 ```
 
+![](/media/corheatmap.jpg)
 
 ## Bar Plot
 
@@ -61,11 +62,18 @@ plt.title('Superheros by Gender')
 plt.ylabel('Number of Superheros')
 plt.show();
 ```
+
+
+
+![](/media/output1.jpg)
+
 Notice there are many more males than females and many more females than non-binary.
 
 And even deeper understanding:
 
 
+
+![](/media/output2.jpg)
 
 ```css
 #r#plot number of superheros per publisher
@@ -77,7 +85,7 @@ plt.xticks(rotation = 90)
 plt.show();
 ```
 
-
+![](/media/output4.jpg)
 
 ```css
 #create new dataframe with only small publishers with < 200 superheros
@@ -93,10 +101,28 @@ plt.xticks(rotation = 90)
 plt.show();
 ```
 
+![](/media/output5.jpg)
+
+```css
+#plot superheros with the most powers
+most_powers = powers_df[['hero_names', 'sum_powers']].sort_values('sum_powers', ascending=False)
+
+sns.barplot(x=most_powers['hero_names'].head(20),
+            y='sum_powers', 
+            data=most_powers)
+
+plt.xticks(rotation=80)
+plt.title('Superheros with the Most Powers')
+plt.xlabel('Superhero')
+plt.ylabel('Number of Powers')
+plt.show();
+```
+
+![](/media/output7.jpg)
+
 
 
 ## Pair plot
-
 
 ```css
 #plot height and weight by gender
@@ -105,7 +131,7 @@ plt.title('Superhero Heights and Weights by Gender')
 plt.show();
 ```
 
-
+![](/media/output3.jpg)
 
 ## Box Plot
 
@@ -121,8 +147,11 @@ plt.ylabel('Number of Powers')
 plt.show();
 ```
 
-Boxplots are not as intuitive as the other graphs shown above, but it communicates a lot of information in its own way. The image below explains how to read a boxplot.
+![](/media/boxplot.jpg)
 
+
+
+Boxplots are not as intuitive as the other graphs shown above, but it communicates a lot of information in its own way. The image below explains how to read a boxplot.
 
 As such, you can see that there are a number of outliers in terms of number of powers for the Good Superheroes, and that most of the Good Superheroes have at least 5 or more super powers.
 
@@ -142,6 +171,14 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.show()
 ```
+
+![](/media/wordcloud.jpg)
+
+
+
+
+
+\---------------------------------------
 
 
 
