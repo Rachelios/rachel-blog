@@ -1,19 +1,23 @@
 ---
-title: "A Gentle Analysis of the Novel Corona Virus 2019 Dataset"
-date: "2020-03-19T22:12:03.284Z"
-template: "post"
+template: post
+title: A Gentle Analysis of the Novel Corona Virus 2019 Dataset
+slug: a-gentle-analysis-of-the-novel-corona-virus-2019
+socialImage: /media/0_5jh4jknccfh3dwbf.jpg
 draft: false
-slug: "a-gentle-analysis-of-the-novel-corona-virus-2019"
-category: "Data"
+date: 2020-03-19T22:12:03.284Z
+description: I found a dataset called ‘Novel Corona Virus 2019 Dataset’ on
+  Kaggle, contains daily information on the number of cases, deaths and recovery
+  so I thought I would create some exploratory data analysis (EDA) and data
+  visualisation using Python!
+category: Data
 tags:
-  - "Covid-19 Plot"
-  - "Data Analysis"
-  - "Python"
-description: "I found a dataset called ‘Novel Corona Virus 2019 Dataset’ on Kaggle, contains daily information on the number of cases, deaths and recovery so I thought I would create some exploratory data analysis (EDA) and data visualisation using Python!"
-socialImage: "/media/gutenberg.jpg"
+  - Covid-19 Plot
+  - Data Analysis
+  - Python
 ---
-
 At about 7:30 am this morning I was having a brief pause on my breakfast just to look at the website I now visit habitually recently: the real-time dashboard tracking coronavirus cases, run by thebaselab.
+
+![](/media/0_5jh4jknccfh3dwbf.jpg)
 
 Today I saw that the number of people killed by the virus has nearly reached a perplexing 6,000 since the start of the outbreak over 3 months ago. Contemplating back at how diligent and somewhat rigorous the Vietnamese authorities have initiated, the alarm is understandable.
 
@@ -21,15 +25,9 @@ I found a dataset called ‘Novel Corona Virus 2019 Dataset’ on Kaggle, contai
 
 EDA is an approach to analysing data sets — a critical process of conducting preliminary exploration into the data. If you are interested in understanding more EDA, this is my previous article.
 
-**Johannes Gensfleisch zur Laden zum Gutenberg** (c. 1398 – 1468) was a German blacksmith, goldsmith, printer, and publisher who introduced printing to Europe. His invention of mechanical movable type printing started the Printing Revolution and is widely regarded as the most important event of the modern period. It played a key role in the development of the Renaissance, Reformation, the Age of Enlightenment, and the Scientific revolution and laid the material basis for the modern knowledge-based economy and the spread of learning to the masses.
 
-<figure class="float-right" style="width: 240px">
-	<img src="/media/gutenberg.jpg" alt="Gutenberg">
-	<figcaption>Johannes Gutenberg</figcaption>
-</figure>
 
-## Before we get started 
-
+## Before we get started
 
 Data
 
@@ -47,11 +45,11 @@ Package
 
 I assume you’re familiar with python. But even if you’re relatively new, this tutorial shouldn’t be too tricky.
 
-You’ll need seabornand pandas.Install them (in your virtual environment) with a simple pip install [PACKAGE NAME].
+You’ll need seabornand pandas.Install them (in your virtual environment) with a simple pip install \[PACKAGE NAME].
 
 Now hold my hands and let’s get started together.
 
-***
+- - -
 
 ## EDA and data visualisation
 
@@ -60,7 +58,6 @@ Firstly, we will read the data into a Pandas data frame:
 ```css
 import pandas
 df_corona = pandas.read_csv('covid_19_data.csv', index_col=0 )
-
 ```
 
 You may have heard about pandas a lot, as it probably is the most popular library for data analysis in Python programming language. I use pandas on a daily basis and really enjoy it because of its eloquent syntax and rich functionality.
@@ -71,19 +68,23 @@ Now let’s have a quick glance on the dataset by printing the first five rows o
 
 ```css
 df_corona.head()
-
-df_corona.head() output
 ```
+
+
+
+![](/media/capture1.jpg)
 
 Or by telling pandas to describe the data for us 🙂
 
 ```css
 df_corona.des()
 ```
+
 Which will return the general stats of the numeric columns in the dataframe:
 
 
-A comprehensively descriptive table of the dataset
+
+![A comprehensively descriptive table of the dataset](/media/ca2.jpg "A comprehensively descriptive table of the dataset")
 
 On average, there are 623 confirmed cases, 21 deaths and 231 recovered cases per day.
 
@@ -96,14 +97,15 @@ print(len(country_list))
 
 The data shows that the virus has spread to 191 countries across Asia, Europe and America.
 
+![](/media/ca2-1.jpg)
 
 So far, no mystery, right?
 
 Now let’s create some data visualisation based on different aspects of the data set.
 
-***
+- - -
 
-## #1: Number of Confirmed cases over time
+## \#1: Number of Confirmed cases over time
 
 ```css
 #normalise the date
@@ -120,7 +122,7 @@ plot.ylabel('Number of confirmed cases',fontsize=35)
 plot.xlabel('Dates',fontsize=35)
 ```
 
-## #2: The race between deaths versus recovered cases
+## \#2: The race between deaths versus recovered cases
 
 ```css
 #plotting a bar chart of recovered cases over time
@@ -133,7 +135,7 @@ plot.xlabel('Dates',fontsize=35)
 plot.legend()
 ```
 
-## #3: Firstest with the mostest — most affected countries besides China
+## \#3: Firstest with the mostest — most affected countries besides China
 
 ```css
 #We know that China is the most affected country by a large margin, #so lets create a bar plot to compare countries other than China
@@ -150,8 +152,9 @@ plot.xticks(fontsize=13)
 plot.yticks(fontsize=13)
 ```
 
+![](/media/ca2-2.jpg)
 
-## #4: Mortality rate over time
+## \#4: Mortality rate over time
 
 ```css
 #The mortality rate, at any point in time, can be roughly calculated #by dividing the number of deaths by the number of confirmed cases
@@ -161,7 +164,9 @@ plot.grid(True)
 plot.show()
 ```
 
-## #5: A closer look at the 10 most-affected provinces in China
+![](/media/ca2-3.jpg)
+
+## \#5: A closer look at the 10 most-affected provinces in China
 
 ```css
 #creating a separate dataframe for provinces
@@ -182,14 +187,12 @@ plot.ylabel('Number of cases',fontsize=15)
 plot.grid(True)
 ```
 
-
-## #6: We can also look at the frequency in Province/State using the ‘Counter’ method from the collections module
+## \#6: We can also look at the frequency in Province/State using the ‘Counter’ method from the collections module
 
 ```css
 from collections import Counter
 print(Counter(df_Corona['Country/Region'].values))
 ```
-
 
 Let’s drop the missing values and limit the counter to output only the five most common Provinces:
 
@@ -198,9 +201,7 @@ df_Corona.dropna(inplace=True)
 print(Counter(df_Corona['Country/Region'].values).most_common(10))
 ```
 
-
 We can also use box plots to visualize the distribution in numeric values based on the minimum, maximum, median, first quartile, and third quartile.
-
 
 For example, let’s plot the distribution in confirmed cases for ‘Taiwan’, ‘Macau’, and ‘Hongkong:
 
@@ -212,7 +213,6 @@ seaborn.boxplot(x= df_confirmed['Country/Region'], y = df_confirmed['Confirmed']
 plot.show()
 ```
 
-
 We can do the same for recovered cases:
 
 ```css
@@ -221,7 +221,6 @@ seaborn.boxplot(x= df_recovered['Country/Region'], y = df_recovered['Recovered']
 plot.show()
 ```
 
-
 And for deaths:
 
 ```css
@@ -229,7 +228,6 @@ df_deaths = df_Corona[df_Corona['Country/Region'].isin(['Taiwan', 'Macau', 'Hong
 seaborn.boxplot(x= df_deaths['Country/Region'], y = df_deaths['Deaths'])
 plot.show()
 ```
-
 
 ## Printing Press
 
@@ -241,4 +239,3 @@ plot.show()
 </figure>
 
 Until at least 1444 he lived in Strasbourg, most likely in the St. Arbogast parish. It was in Strasbourg in 1440 that Gutenberg is said to have perfected and unveiled the secret of printing based on his research, mysteriously entitled Kunst und Aventur (art and enterprise). It is not clear what work he was engaged in, or whether some early trials with printing from movable type may have been conducted there. After this, there is a gap of four years in the record. In 1448, he was back in Mainz, where he took out a loan from his brother-in-law Arnold Gelthus, quite possibly for a printing press or related paraphernalia. By this date, Gutenberg may have been familiar with intaglio printing; it is claimed that he had worked on copper engravings with an artist known as the Master of Playing Cards.
-
