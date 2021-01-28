@@ -1,16 +1,21 @@
 ---
-title: "Misty taste of moonshine, teardrops in my eyes"
-date: "2020-10-11T22:12:03.284Z"
-template: "post"
+template: post
+title: Misty taste of moonshine, teardrops in my eyes
+slug: misty-taste-of-moonshine-teardrops-in-my-eye
+socialImage: /media/autumn.jpg
 draft: false
-slug: "misty-taste-of-moonshine-teardrops-in-my-eye"
-category: "Blog"
+date: 2020-10-11T22:12:03.284Z
+description: Tuy nhiên cuộc đời thú vị ở chỗ không bao giờ chúng ta nắm được nó,
+  chỉ những tưởng là thế thôi, là đã nắm được rồi nhưng nào đâu phải. Như thể
+  cầm trên tay một cốc trà Earl Grey hảo hạng thơm phức vậy, tưởng là nắm được
+  nó, nhưng chỉ mười giây sau đã uống nó mất rồi còn đâu. Trà là để uống chứ có
+  phải để nắm lên đâu, nên cuộc đời cũng vậy, sống nó chứ không phải để nắm nó.
+  Nắm cũng chả được.
+category: Blog
 tags:
-  - "Mùa Thu"
-  - "Daily Thoughts"
-  - "Kế hoạch Cuộc đời"
-description: "I found a dataset called ‘Novel Corona Virus 2019 Dataset’ on Kaggle, contains daily information on the number of cases, deaths and recovery so I thought I would create some exploratory data analysis (EDA) and data visualisation using Python!"
-socialImage: "/media/autumn.jpg"
+  - Mùa Thu
+  - Daily Thoughts
+  - Kế hoạch Cuộc đời
 ---
 
 Một trong những tín hiệu của mùa thu đó là mọi người bắt đầu nhắc mình về sinh nhật của mình.
