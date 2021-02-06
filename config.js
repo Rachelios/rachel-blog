@@ -6,7 +6,7 @@ module.exports = {
   title: 'Blog by Rachel Le',
   subtitle: 'A cup of tea and a good book',
   copyright: '© Rachel Le 2020',
-  disqusShortname: '',
+  disqusShortname: 'blog-by-rachel',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-189098960-1',
   useKatex: false,
