@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://.netlify.com',
   pathPrefix: '/',
   title: 'Blog by Rachel Le',
-  subtitle: 'I used to play with FCFF/FCFE model, but then I found Data Science…',
+  subtitle: 'A cup of tea and a good book',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
