@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://.netlify.com',
+  url: 'https://heyiamrachel.com',
   pathPrefix: '/',
   title: 'Blog by Rachel Le',
   subtitle: 'A cup of tea and a good book',
-  copyright: '© All rights reserved.',
+  copyright: '© Rachel Le 2020',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-733712333-2',
+  postsPerPage: 5,
+  googleAnalyticsId: 'UA-189098960-1',
   useKatex: false,
   menu: [
     {
@@ -18,6 +18,10 @@ module.exports = {
     {
       label: 'About me',
       path: '/pages/about'
+    },
+    {
+      label: 'Orion Chocopie',
+      path: '/pages/appreciation'
     }
   ],
   author: {
@@ -25,11 +29,11 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'A cup of tea and a good book',
     contacts: {
-      email: '',
+      email: 'lenguyenbichngoc95@gmail.com',
       facebook: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'rachelios',
       rss: '',
       vkontakte: '',
       linkedin: '#',
