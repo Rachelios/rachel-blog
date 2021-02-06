@@ -23,7 +23,7 @@ module.exports = {
   author: {
     name: 'Rachel Le',
     photo: '/photo.jpg',
-    bio: 'I used to play with FCFF/FCFE model, but then I found Data Science…',
+    bio: 'A cup of tea and a good book',
     contacts: {
       email: '',
       facebook: '#',
