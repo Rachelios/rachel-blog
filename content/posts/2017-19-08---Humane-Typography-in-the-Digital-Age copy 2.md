@@ -57,9 +57,7 @@ From the tabs at the top of the file explorer, select a source and navigate to t
 
 Click on File/Save a copy in Github, you will be prompted to log in to Github and authorize app once, and from then on you can simply save a notebook to one of your repositories. Each time you save, you can add a commit message for GitHub. After you save it to GitHub, you will get a link “View in Colaboratory” which opens your notebook directly in colab. This means anyone who opens your notebook doesn’t need to do any setup for Jupyter Notebook..
 
-> In the new computer age the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest.
->
-— Massimo Vignelli
+
 
 
 
@@ -109,11 +107,9 @@ from bokeh.io import output_notebook
 	</blockquote>
 </figure>
 
-Typefaces don’t look handmade these days. And that’s all right. They don’t have to. Industrialism took that away from them and we’re fine with it. We’ve traded that part of humanity for a process that produces more books that are easier to read. That can’t be bad. And it isn’t.
 
-> Humane typography will often be comparatively rough and even uncouth; but while a certain uncouthness does not seriously matter in humane works, uncouthness has no excuse whatever in the productions of the machine.
->
-> — Eric Gill
+
+
 
 
 
@@ -154,4 +150,4 @@ That’s all from me today. It’s your turn. Raise your hand, shine some light,
 
 
 
-*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x).*
+*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium].*
