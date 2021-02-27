@@ -42,27 +42,13 @@ Monitored as of Feb 27, 2021: 37/1000.
 29. Heard someone had cried because of departing from me
 30. Have a kiss during New Year firework performance
 31. Receive nomination to speak at graduation ceremony
-32. Birthday surprises
+32. Birthday surprise at office
 33. Walk across the stage at graduation, twice
-34. Received thank you after I said thank you first
+34. Receive thank you as a reply after I said thank you first
 35. Heard someone apologised to me sincerely, then gave me my comfort food
 36. Snow walks, hands in hands
-37. See a comet
-38. 
-39.
-40.
-41.
-42.
-43.
-44.
-45.
-46.
-47.
-48.
-49.
-50.
-51.
-1000. 
+37. See a comet (C/2006 P1 Comet McNaught 2007)
+1000. ? 
 
 
 
