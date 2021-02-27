@@ -21,9 +21,11 @@ By typing the company name or symbol on the search bar:
 
 ![yahoo_finance.jpg](/media/yahoo_finance.jpg)
 
-At best, I have the option to select the time frame I want to see for that stock, and then download the data. At worse, I have zero interested in downloading, manually, one stock by another *facepalm* 
+At best, I have the option to select the time frame I want to see for that stock, and then download the data.
+At worse, I have zero interested in downloading, manually, one stock by another! 🤦‍♀️
+
 Some examples:
-![treemap-drinking.jpg](/media/treemap-drinking.jpg)
+![download_stock.jpg](/media/download_stock.jpg)
 
 And my personal favourite example: 
 

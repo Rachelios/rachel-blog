@@ -20,7 +20,7 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'Orion Chocopie',
+      label: 'List 1000',
       path: '/pages/appreciation'
     }
   ],
