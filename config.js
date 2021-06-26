@@ -20,8 +20,8 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'List 1000',
-      path: '/pages/appreciation'
+      label: 'My Portfolio',
+      path: 'https://heyiamrachel.gatsbyjs.io/'
     }
   ],
   author: {
@@ -36,7 +36,7 @@ module.exports = {
       github: 'rachelios',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
+      linkedin: 'hey-i-am-rachel',
       instagram: '#',
       line: '',
       gitlab: '',
