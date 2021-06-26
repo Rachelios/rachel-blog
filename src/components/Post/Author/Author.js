@@ -17,7 +17,7 @@ const Author = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <strong>{author.name}</strong> on LinkedIn
+          <strong> {author.name} </strong>  on LinkedIn.
         </a>
       </p>
     </div>
