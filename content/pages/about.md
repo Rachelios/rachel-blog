@@ -15,3 +15,6 @@ I self learnt Python and Machine Learning via different platforms.
 *Besides data science and data storytelling, I also like contemporary art and travelling.*
 
 Having lived in Vietnam, Singapore, United Kingdom and now Malaysia, I understand English, Vietnamese and French.
+
+Please visit my [Portfolio Page](https://heyiamrachel.gatsbyjs.io/)
+![Rachel's Portfolio](/media/portfolio-page.jpg)
