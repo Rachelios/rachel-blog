@@ -55,7 +55,7 @@ Now hold my hands and let’s get started together.
 
 Firstly, we will read the data into a Pandas data frame:
 
-```css
+```python
 import pandas
 df_corona = pandas.read_csv('covid_19_data.csv', index_col=0 )
 ```
@@ -66,7 +66,7 @@ The index_colparameter specifies to pandaswhich column is to be used as the inde
 
 Now let’s have a quick glance on the dataset by printing the first five rows of data.
 
-```css
+```python
 df_corona.head()
 ```
 
@@ -76,7 +76,7 @@ df_corona.head()
 
 Or by telling pandas to describe the data for us 🙂
 
-```css
+```python
 df_corona.des()
 ```
 
@@ -88,7 +88,7 @@ Which will return the general stats of the numeric columns in the dataframe:
 
 On average, there are 623 confirmed cases, 21 deaths and 231 recovered cases per day.
 
-```css
+```python
 #countries where the virus has spread to
 country_list = list(df_Corona['Country/Region'].unique())
 print(country_list)
@@ -107,7 +107,7 @@ Now let’s create some data visualisation based on different aspects of the dat
 
 ## \#1: Number of Confirmed cases over time
 
-```css
+```python
 #normalise the date
 df_Corona['ObservationDate'] = pandas.to_datetime(df_Corona['ObservationDate'])
 df_Corona['ObservationDate_new'] = df_Corona['ObservationDate'].apply(lambda x:x.date())
@@ -124,7 +124,7 @@ plot.xlabel('Dates',fontsize=35)
 
 ## \#2: The race between deaths versus recovered cases
 
-```css
+```python
 #plotting a bar chart of recovered cases over time
 Recovered_Deaths = pandas.pivot_table(df_by_date, index ='ObservationDate_new', values=['Recovered', 'Deaths']
 ,aggfunc = numpy.sum)
@@ -137,7 +137,7 @@ plot.legend()
 
 ## \#3: Firstest with the mostest — most affected countries besides China
 
-```css
+```python
 #We know that China is the most affected country by a large margin, #so lets create a bar plot to compare countries other than China
 df_country=df_Corona.groupby(['Country/Region']).max().reset_index(drop=None)
 df_countrynoChina = df_country[df_country['Country/Region']!= 'Mainland China']
@@ -156,7 +156,7 @@ plot.yticks(fontsize=13)
 
 ## \#4: Mortality rate over time
 
-```css
+```python
 #The mortality rate, at any point in time, can be roughly calculated #by dividing the number of deaths by the number of confirmed cases
 df_by_date['mrate']=df_by_date.apply(lambda x: x['Deaths']*100/(x['Confirmed']), axis=1)
 plot.plot('ObservationDate_new','mrate',data=df_by_date, color='red')
@@ -168,7 +168,7 @@ plot.show()
 
 ## \#5: A closer look at the 10 most-affected provinces in China
 
-```css
+```python
 #creating a separate dataframe for provinces
 df_province=df_Corona[df_Corona['Country/Region']=='Mainland China'].groupby(['Province/State']).max().reset_index(drop=None)
 #selecting 10 most affected provinces
@@ -189,14 +189,14 @@ plot.grid(True)
 
 ## \#6: We can also look at the frequency in Province/State using the ‘Counter’ method from the collections module
 
-```css
+```python
 from collections import Counter
 print(Counter(df_Corona['Country/Region'].values))
 ```
 
 Let’s drop the missing values and limit the counter to output only the five most common Provinces:
 
-```css
+```python
 df_Corona.dropna(inplace=True)
 print(Counter(df_Corona['Country/Region'].values).most_common(10))
 ```
@@ -205,7 +205,7 @@ We can also use box plots to visualize the distribution in numeric values based 
 
 For example, let’s plot the distribution in confirmed cases for ‘Taiwan’, ‘Macau’, and ‘Hongkong:
 
-```css
+```python
 import seaborn 
 import matplotlib.pyplot as plot
 df_confirmed = df_Corona[df_Corona['Country/Region'].isin(['Taiwan', 'Macau', 'Hong Kong'])]
@@ -215,7 +215,7 @@ plot.show()
 
 We can do the same for recovered cases:
 
-```css
+```python
 df_recovered = df_Corona[df_Corona['Country/Region'].isin(['Taiwan', 'Macau', 'Hong Kong'])]
 seaborn.boxplot(x= df_recovered['Country/Region'], y = df_recovered['Recovered'])
 plot.show()
@@ -223,7 +223,7 @@ plot.show()
 
 And for deaths:
 
-```css
+```python
 df_deaths = df_Corona[df_Corona['Country/Region'].isin(['Taiwan', 'Macau', 'Hong Kong'])]
 seaborn.boxplot(x= df_deaths['Country/Region'], y = df_deaths['Deaths'])
 plot.show()

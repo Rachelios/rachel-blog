@@ -67,7 +67,7 @@ Click on File/Save a copy in Github, you will be prompted to log in to Github an
 
 Very simple, you just have to run this code:
 
-```css
+```python
 from google.colab import drive
 drive.mount('/content/gdrive')
 ```
@@ -78,7 +78,7 @@ And hit refresh, your drive appears right there on the left hand side of the scr
 
 Let’s grab a quick look at the file list in your Drive:
 
-```css
+```python
 !ls "/content/gdrive/My Drive/"
 which is very useful…
 ```
@@ -87,7 +87,7 @@ which is very useful…
 
 Colab supports bunches of common libraries natively, we will just have to run the code, as usual, to call our friends to join the game:
 
-```css
+```python
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplt as plt
@@ -124,7 +124,7 @@ What we are going to do is to perform data visualisation with plotly and bokeh .
 
 This data set contains information about life expectancy (lifeExp), population (pop), GPD per capita (gdpPercap), iso alpha indicators and iso numbers for each country per continent in 2007.
 
-```css
+```python
 df["world"] = "world" # in order to have a single root node
 fig = px.treemap(df, path=['world', 'continent', 'country'], values='pop',
 color='lifeExp', hover_data=['iso_alpha'],
@@ -136,7 +136,7 @@ fig.show()
 
 Note: if you encounter error: treemap() got an unexpected keyword argument ‘path’ in plotly.express => just upgrade plotly using
 
-```css
+```python
 pip install --upgrade plotly
 ```
 OR

@@ -28,7 +28,7 @@ Let’s get started
 
 A very first fundamental step to start our python notebook is to call relevant libraries
 
-```css
+```python
 # Typical libraries for data manipulation and visualisation
 import pandas 
 import datetime 
@@ -50,7 +50,7 @@ As per our plan to follow fig1, we will plot the returns (i.e. wealth) of an Equ
 
 ## Part A: Plotting Daily Return for Equally Weighted Market Portfolio
 
-```css
+```python
 # Set up End and Start times for data grab
 end = datetime.now()
 start = datetime(2006,1,1)
@@ -65,7 +65,7 @@ tickerDf1.head()
 ```
 Then we will get the data of first day into seperate dataframe for cummulative calculation
 
-```css
+```python
 # Get the data for 3 Jan 2006
 begRef = tickerDf1.loc[tickerDf1.Date == '2006-01-03']
 def retBegin(val):
@@ -78,7 +78,7 @@ tickerDf1.head()
 ```
 Now just have to plot the figure
 
-```css
+```python
 tickerDf1.plot(x = 'Date', y= 'Market_Portfolio', figsize = (10,5))
 plt.title('Accumulative Daily Return of NASDAQ Index as Market Portfolio based on 2006',
           loc ='left', fontsize=15, fontweight=0, color='black')
@@ -100,7 +100,7 @@ SMITH ANALYSIS STOCK LIST
 MY ANALYSIS STOCK LIST
 ![new-analysis.jpg](/media/new-analysis.jpg)
 
-```css
+```python
 #List of stocks we'll use for this analysis
 
 stock_list = ['CAKE','CHIC','FUN','LUV', 'ROCK', 'YUM', 'PZZA',
@@ -112,14 +112,14 @@ prices = prices.reset_index()
 ```
 Here, I perform an alternative way of calculating cummulative returns
 
-```css
+```python
 prices['Portfolio'] = prices.iloc[:,1:].sum(1)
 prices['Portfolio_return'] = prices['Portfolio'].pct_change()
 prices['Clever_ticket_portfolio'] = (1 + prices['Portfolio_return'].fillna(0)).cumprod()
 ```
 Similarly, plot the chart:
 
-```css
+```python
 prices.plot(x = 'Date', y= 'Clever_ticket_portfolio', figsize = (10,5))
 plt.title('Accumulative Daily Return of NASDAQ Index as Market Portfolio based on 2006',
           loc ='left', fontsize=15, fontweight=0, color='black')
@@ -134,7 +134,7 @@ plt.show()
 
 
 Now that we are able to plot the two portfolios separately, we want to combine them in one chart only. 
-```css
+```python
 final = pd.merge(tickerDf1, prices, on = 'Date')
 ax = plt.gca() # gca stands for 'get current axis'
 

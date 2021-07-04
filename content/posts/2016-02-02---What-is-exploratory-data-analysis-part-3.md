@@ -39,7 +39,7 @@ As much bulky as the word ‘correlation matrix’ has given the impression, sea
 
 We can see that there is a not significant correlation between weight and height.
 
-```css
+```python
 #Calculate correlation matrix
 corr = info_df.corr()
 # plot the heatmap
@@ -53,7 +53,7 @@ sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, annot=True
 
 Bar charts are arguably one of the most common visualisations when it comes to data. A bar chart is a type of graph which shows comparisons among discrete categories along with the two axes, giving you a quick understanding on the dataset.
 
-```css
+```python
 #plot number of superheros by gender
 sns.set_palette("husl")
 sns.countplot(x='Gender', data=info_df);
@@ -75,7 +75,7 @@ And even deeper understanding:
 
 ![](/media/output2.jpg)
 
-```css
+```python
 #r#plot number of superheros per publisher
 sns.countplot(x="Publisher", data=info_df)
 plt.title('Number of Superheros by Publisher')
@@ -87,7 +87,7 @@ plt.show();
 
 ![](/media/output4.jpg)
 
-```css
+```python
 #create new dataframe with only small publishers with < 200 superheros
 counts = info_df.Publisher.value_counts()
 small_publishers_df = info_df.loc[info_df['Publisher'].isin(counts[counts < 200].index), :]
@@ -103,7 +103,7 @@ plt.show();
 
 ![](/media/output5.jpg)
 
-```css
+```python
 #plot superheros with the most powers
 most_powers = powers_df[['hero_names', 'sum_powers']].sort_values('sum_powers', ascending=False)
 
@@ -124,7 +124,7 @@ plt.show();
 
 ## Pair plot
 
-```css
+```python
 #plot height and weight by gender
 sns.pairplot(data=info_df, hue='Gender', size=5)
 plt.title('Superhero Heights and Weights by Gender')
@@ -137,7 +137,7 @@ plt.show();
 
 Another way to visualize the distribution of a variable is a boxplot. We’re going to look at the number of powers for each bucket of superhero as an example.
 
-```css
+```python
 #plot number of powers by Alignment
 sns.boxplot(x=merged_df.Alignment, y=merged_df.sum_powers, hue=merged_df.Gender)
 
@@ -157,7 +157,7 @@ As such, you can see that there are a number of outliers in terms of number of p
 
 ## Word Cloud
 
-```css
+```python
 #create a word cloud of superheros with the most powers
 from wordcloud import WordCloud
 

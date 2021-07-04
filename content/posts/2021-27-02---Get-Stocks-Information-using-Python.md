@@ -47,7 +47,7 @@ The script is simple.
 
 First we will need to install and load the libraries need, including pandas_datareader – information to be retrieved with the supports of that library; 
 
-```css
+```python
 # Typical libraries for data manipulation and visualisation
 import pandas 
 import datetime 
@@ -69,7 +69,7 @@ from datetime import datetime
 
 For a customised stock portfolio, we will store the stock symbol into a data frame
 
-```css
+```python
 # The tech stocks we'll use for this analysis
 tech_list = ['AAPL','GOOG','FB','AMZN']
 And define the date range for the data 
@@ -79,14 +79,14 @@ start = datetime(2017,1,3)
 
 Get the data using datareader library and then display the first rows of the dataframe to see what they look like
 
-```css
+```python
 prices = web.DataReader(tech_list, 'yahoo', start, end)['Adj Close']
 prices.head()
 ```
 
 Quick glance into their daily closing prices movement with plotly visualisation 
 
-```css
+```python
 #viz
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -118,7 +118,7 @@ fig.show()
 
 And we also want to analyse the return of the stock.
 
-```css
+```python
 # We'll use pct_change to find the percent change for each day
 returns =prices.pct_change()
 returns.head()
@@ -128,7 +128,7 @@ returns.head()
 
 We will first retrive a list of major Stock Indices around the world, then run a loop to collect historical data of these All stock indices.
 
-```css
+```python
 #list of Stock Indices
 df_list = pandas.read_html('https://finance.yahoo.com/world-indices/')
 majorStockIdx = df_list[0]
@@ -146,7 +146,7 @@ for s in majorStockIdx.Symbol: # iterate for every stock indices
 ```
 Now to clasify each of the indices to its region, we can define a function: 
 
-```css
+```python
 def getRegion(ticker):
     for k in region_idx.keys():
         if ticker in region_idx[k]:
@@ -154,7 +154,7 @@ def getRegion(ticker):
 ```
 where 
 
-```css
+```python
 region_idx= { 'US & Canada' : ['^GSPC', '^DJI', '^IXIC', '^RUT','^GSPTSE'],
                'Latin America' : ['^BVSP', '^MXX', '^IPSA', ],
                'East Asia' : ['^N225', '^HSI', '000001.SS', '399001.SZ', '^TWII', '^KS11'],
@@ -166,7 +166,7 @@ region_idx= { 'US & Canada' : ['^GSPC', '^DJI', '^IXIC', '^RUT','^GSPTSE'],
 ```
 
 Create a new column to store the region information in our stock indices data frame
-```css
+```python
 msi['region']= msi.ticker.apply(lambda x: getRegion(x))
 lastDate = msi.loc[msi.Date == '2020-09-30'].reset_index().drop(['index'],axis=1)
 lastDate.head()
@@ -212,7 +212,7 @@ lastDate['3YR'] = lastDate.apply(lambda r: getReturn('Y', 3, r.ticker, r.Date, r
 ```
 Then plotting returns for these Stock Indices would be easy: 
 
-```css
+```python
 palette = ["#965757", "#D67469", "#4E5A44", "#A1B482", '#EFE482', "#99BFCF"]
 fig, axes = plt.subplots(1,5, figsize=(20, 10),sharey=True)
 width = 0.75
