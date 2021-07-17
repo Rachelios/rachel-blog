@@ -37,7 +37,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #233445;
 }
 
 /* Inline code */
@@ -51,7 +51,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color:	#777777;
+	color:	#234296;
 }
 
 .token.punctuation {

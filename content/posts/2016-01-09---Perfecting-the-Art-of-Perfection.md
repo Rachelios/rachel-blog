@@ -33,10 +33,13 @@ Ha, is it important to know that? Yes, because if you understand this logic, it 
 
 If we want to retrieve the average orders by merchant_name, the query will be:
 
+```python
 SELECT merchant_name,
 AVG(total_orders) AS avg_orders
 FROM order_data
 GROUP BY merchant_name;
+```
+
 Which will give the following result:
 
 So far, no mystery, right?
@@ -45,30 +48,34 @@ SQL Sub-Queries
 Next, what if we want to filter only the merchants with average orders higher than 30,000? Normally, our first approach would be something like that:
 
  
-
+```python
 SELECT merchant_name,
 AVG(total_orders) avg_orders
 FROM order_data
 WHERE avg_orders > 30000
 GROUP BY merchant_name;
- 
+```
 
 However, the first attempt generates an aggregation error.
 
 
 
 It gave us an aggregation error, but why? Let’s do the steps according to the way the query is processed:
-
+```python
 1: FROM order_data — OK, the table exists, so let’s keep going;
-2: WHERE avg_orders > 30000 — Hummmm, here we have an error, how could the values be filtered if the calculation wasn’t yet done?
+2: WHERE avg_orders > 30000 
+```
+
+Hummmm, here we have an error, how could the values be filtered if the calculation wasn’t yet done?
 That is a perfect example where a sub-query need to be used. What we need to do is to first generate the field avg_orders, so when the WHEN statement comes to filter, the calculation will be already there! As per the query logic, this process needs to be done on the FROM statement, as it comes before the filter WHEN. Let’s see how this query looks like:
 
+```python
 SELECT merchant_name, avg_orders
 FROM -- Here we make our sub-query:
 (SELECT merchant_name,(total_orders) AS avg_orders ) order_data
 GROUP BY merchant_name) ABC -- End of the sub-query
 WHERE avg_orders > 30000;
-
+```
 
  
 
