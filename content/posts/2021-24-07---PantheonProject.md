@@ -118,10 +118,13 @@ rome <- pantheon_i30_rome %>%
 </figure>
 
 As next steps, it would be good to know how cities and countries have shifted in prominence and which region were the centers of science or arts in history.
+
 </br>
 
+<div>
 ## ----
 
 Thanks for reading! You can find [my Rmarkdown code here](https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/pantheon_popularity).
 
 *Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*
+</div>
