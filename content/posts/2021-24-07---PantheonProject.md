@@ -1,6 +1,6 @@
 ---
 title: Those cultural accomplishments that shape the world.
-date: "2021-24-07T22:40:32.169Z"
+date: "2021-07-24T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "those-cultural-accomplishments-that-shape-the-world"
@@ -13,9 +13,17 @@ description: "Considering “practice makes perfect” is a popular cliché for 
 socialImage: "/media/paris.jpg"
 ---
 
-“If all As are Bs,
-And all Bs are Cs,
-Then, all As are Cs.” (Aristotle syllogism) 
+
+<figure>
+	<blockquote>
+		<p>If all As are Bs, 
+      And all Bs are Cs,
+      Then, all As are Cs..</p>
+		<footer>
+			<cite>— Aristotle syllogism.</cite>
+		</footer>
+	</blockquote>
+</figure>
 
 Considering “practice makes perfect” is a popular cliché for human being in general, Aristotle syllogism above is particularly common for logic and analytical students. (right? 😶)
 
@@ -23,12 +31,27 @@ In fact, Aristotle one of the greatest philosophers of all time and his teacher,
 
 This interesting dataset was introduced by MIT Media Lab as an attempt to quantify culture accomplishments that endows our species and shapes our world like it is today. Ultimately, Pantheon identifies and classifies famous historical figures via weighing upon Wikipedia pageview and editions, breaking down by cultural domains, languages, geographies and time period, and calculate a composite Historical Popularity Index. 
 
+To follow through, you can either download the data from kaggle (https://www.kaggle.com/mit/pantheon-project) or simply read_csv using below code:
+
+```python
+pantheon_popularity_index <- read.csv("https://raw.githubusercontent.com/Rachelios/A-cup-of-tea-and-a-good-book/master/pantheon_popularity/pantheon_database.csv", stringsAsFactors=FALSE)
+
+print(head(pantheon_popularity_index,5))
+```
+
 First few rows in the dataset:
 ![pantheon-data-preview.jpg](/media/pantheon-data-preview.jpg)
 
 ## Key Cultural Domains 
 
 To deepen our understanding on the dataset, I sorted and selected 5 highest-ranked city by influence dominance according to the index, and placed a filter on the influencers whose Wikipedia profiles have been written in more than 30 languages to constraint and ensure importance level. 
+
+```python
+pantheon_i30 <- pantheon_popularity_index %>%
+  filter(city %in% c('Rome', 'Paris', 'New York', 'Los Angeles', 'London', 'Tokyo'),
+         article_languages>=30) %>%
+  mutate(birth_year = (birth_year))
+```
 
 There are 7 key cultural domains:
 
@@ -40,9 +63,17 @@ After the polar hclust chart that I’ve inspired to visualise by Hannah Yan in 
 
 Today I will again plot this popularity index by country in bubble chart, with size of the bubbles indicating the magnitude of popularity index and coordinate them to a single node with the length of the lines indicating number of languages. 
 
-![rome.jpg](/media/rome.jpg)
 
-![paris.jpg](/media/paris.jpg)
+<figure class="float-left" style="width: 350px">
+	<img src="/media/rome.jpg" alt="Rome">
+	<figcaption>Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes.</figcaption>
+</figure>
+
+<figure class="float-right" style="width: 350px">
+	<img src="/media/paris.jpg" alt="Paris">
+	<figcaption>Paris, The City of Lights, in comparison has more influencing figures in Arts.</figcaption>
+</figure>
+
 
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.
 

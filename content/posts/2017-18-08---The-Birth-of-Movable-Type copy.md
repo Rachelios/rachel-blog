@@ -231,10 +231,3 @@ plot.show()
 
 ## Printing Press
 
-.
-
-<figure class="float-left" style="width: 240px">
-	<img src="/media/printing-press.jpg" alt="Early Printing Press">
-	<figcaption>Early wooden printing press as depicted in 1568.</figcaption>
-</figure>
-
