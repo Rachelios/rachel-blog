@@ -44,7 +44,7 @@ First few rows in the dataset:
 
 ## Key Cultural Domains 
 
-To deepen our understanding on the dataset, I sorted and selected 5 highest-ranked city by influence dominance according to the index, and placed a filter on the influencers whose Wikipedia profiles have been written in more than 30 languages to constraint and ensure importance level. 
+To deepen our understanding on the dataset, I sorted and selected 6 highest-ranked city by influence dominance according to the index, and placed a filter on the influencers whose Wikipedia profiles have been written in more than 30 languages to constraint and ensure importance level. 
 
 ```python
 pantheon_i30 <- pantheon_popularity_index %>%
