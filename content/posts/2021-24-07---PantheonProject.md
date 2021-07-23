@@ -64,18 +64,18 @@ After the polar hclust chart that I’ve inspired to visualise by Hannah Yan in 
 Today I will again plot this popularity index by country in bubble chart, with size of the bubbles indicating the magnitude of popularity index and coordinate them to a single node with the length of the lines indicating number of languages. 
 
 
-<figure class="float-left" style="width: 350px">
+<figure class="float-left" style="width: 500px">
 	<img src="/media/rome.jpg" alt="Rome">
-	<figcaption>Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes.</figcaption>
+	
 </figure>
 
-<figure class="float-right" style="width: 350px">
+<figure class="float-right" style="width: 500px">
 	<img src="/media/paris.jpg" alt="Paris">
-	<figcaption>Paris, The City of Lights, in comparison has more influencing figures in Arts.</figcaption>
+	
 </figure>
 
-
-Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.
+<p>
+Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.</p>
 
 ![newyork.jpg](/media/newyork.jpg)
 ![london.jpg](/media/london.jpg)
