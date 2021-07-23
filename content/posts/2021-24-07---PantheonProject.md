@@ -59,7 +59,7 @@ There are 7 key cultural domains:
 
 ## Around the World
 
-After the polar hclust chart that I’ve inspired to visualise by Hannah Yan in (alcohol Consumption), I seem to have an endless preference towards polar charts.
+After the polar [hclust chart](https://heyiamrachel.com/posts/shift-in-alcohol-consumption-charting-a-new-future) that I’ve inspired to visualise by Hannah Yan , I seem to have an endless preference towards polar charts. (because they look fantastically nice... )
 
 Today I will again plot this popularity index by country in bubble chart, with size of the bubbles indicating the magnitude of popularity index and coordinate them to a single node with the length of the lines indicating number of languages. 
 
