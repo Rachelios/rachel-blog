@@ -73,7 +73,7 @@ Today I will again plot this popularity index by country in bubble chart, with s
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. 
 <p>
 
-
+.
 
 </p>
 
@@ -86,6 +86,9 @@ Paris, The City of Lights, in comparison has more influencing figures in Arts wi
 <p>
 
 
+
+
+.
 
 </p>
 
