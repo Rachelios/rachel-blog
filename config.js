@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'Blog by Rachel Le',
   subtitle: 'A cup of tea and a good book',
-  copyright: '© Rachel Le 2020',
+  copyright: '© Rachel Le 2021',
   disqusShortname: 'blog-by-rachel',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-189098960-1',

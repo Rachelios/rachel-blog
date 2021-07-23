@@ -1,5 +1,6 @@
 // @flow strict
-type CSSModule = {
+type CSSModule = 
+{
   [key: string]: string,
 };
 

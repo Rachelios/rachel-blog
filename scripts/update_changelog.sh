@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#probably not in use now
 set -e
 
 usage() {
