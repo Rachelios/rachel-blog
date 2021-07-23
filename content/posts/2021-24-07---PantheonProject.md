@@ -29,7 +29,7 @@ Considering “practice makes perfect” is a popular cliché for human being in
 
 In fact, Aristotle one of the greatest philosophers of all time and his teacher, Plato are regarded as the most notable historical figures in the world, according to Project Pantheon dataset that I am playing around with today.(https://www.kaggle.com/mit/pantheon-project)
 
-This interesting dataset was introduced by MIT Media Lab as an attempt to quantify culture accomplishments that endows our species and shapes our world like it is today. Ultimately, Pantheon identifies and classifies famous historical figures via weighing upon Wikipedia pageview and editions, breaking down by cultural domains, languages, geographies and time period, and calculate a composite Historical Popularity Index. 
+This interesting dataset was introduced by MIT Media Lab as an attempt to quantify culture accomplishments that endow our species and shape our world like it is today. Ultimately, Pantheon identifies and classifies famous historical figures via weighing upon Wikipedia pageview and editions, breaking down by cultural domains, languages, geographies and time period. Then, a composite Historical Popularity Index will be calculated.
 
 To follow through, you can either download the data from kaggle (https://www.kaggle.com/mit/pantheon-project) or simply read_csv using below code:
 
@@ -68,7 +68,7 @@ Today I will again plot this popularity index by country in bubble chart, with s
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. 
 
 ![paris.jpg](/media/paris.jpg)
-Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.
+Paris, The City of Lights, in comparison has more influencing figures in Arts and Humanities with notable people such as Voltaire, Louis XIV of France, Claude Monet.
 
 ![newyork.jpg](/media/newyork.jpg)
 
@@ -76,7 +76,7 @@ Not so surprised as a cultural diversified city, New York demonstrates cultural 
 
 ![london.jpg](/media/london.jpg)
 
-London exerts a quite dominant of influence in Arts and Science and one of the cities with the most notable female figures while Tokyo is  the birthplace of historically renowned politicians and a Nobel-laureate writer.
+London exerts a quite dominant of influence in Arts and Science and one of the cities with the most notable female figures while Tokyo is  the birthplace of historically renowned emperors like Hirohito, Akihito.
 
 ![tokyo.jpg](/media/tokyo.jpg)
 
