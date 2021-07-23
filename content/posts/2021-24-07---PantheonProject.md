@@ -63,42 +63,20 @@ After the polar hclust chart that I’ve inspired to visualise by Hannah Yan in 
 
 Today I will again plot this popularity index by country in bubble chart, with size of the bubbles indicating the magnitude of popularity index and coordinate them to a single node with the length of the lines indicating number of languages. 
 
-
-<figure class="float-left" style="width: 400">
-	<img src="/media/rome.jpg" alt="Rome">
-	
-</figure>
-
+![rome.jpg](/media/rome.jpg)
 
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. 
-<p>
 
-.
-
-</p>
-
-<figure class="float-right" style="width: 400">
-	<img src="/media/paris.jpg" alt="Paris">
-	
-</figure>
-
+![paris.jpg](/media/paris.jpg)
 Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.
-<p>
-
-
-
-
-.
-
-</p>
-
-
-Not so surprised as a cultural diversified city, New York demonstrates cultural influence in all domains, from Humanities to Sports to Science & Technology. 
 
 ![newyork.jpg](/media/newyork.jpg)
 
-London exerts a quite dominant of influence in Arts and Science and one of the cities with the most notable female figures while Tokyo is  the birthplace of historically renowned politicians and a Nobel-laureate writer.
+Not so surprised as a cultural diversified city, New York demonstrates cultural influence in all domains, from Humanities to Sports to Science & Technology. 
+
 ![london.jpg](/media/london.jpg)
+
+London exerts a quite dominant of influence in Arts and Science and one of the cities with the most notable female figures while Tokyo is  the birthplace of historically renowned politicians and a Nobel-laureate writer.
 
 ![tokyo.jpg](/media/tokyo.jpg)
 
@@ -134,10 +112,24 @@ rome <- pantheon_i30_rome %>%
   scale_color_manual(values=c("#f7347a", "#ffdfba","#7408bb", "#bae1ff", "#800000", "#ffb3ba","#ffa500"))
 ```
 
+<figure class="float-left" style="width: 400">
+	<img src="/media/paris.jpg" alt="Paris">
+	
+</figure>
+
 As next steps, it would be good to know how cities and countries have shifted in prominence and which region were the centers of science or arts in history.
+<p>
+
+
+
+
+.
+.
+
+</p>
 
 ----
 
-Thanks for reading! You can find my notebook code here (https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/Alcohol%20Consumption)
+Thanks for reading! You can find [my Rmarkdown code here](https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/pantheon_popularity).
 
 *Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*
