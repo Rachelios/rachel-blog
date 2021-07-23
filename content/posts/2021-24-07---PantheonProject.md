@@ -118,33 +118,7 @@ rome <- pantheon_i30_rome %>%
 </figure>
 
 As next steps, it would be good to know how cities and countries have shifted in prominence and which region were the centers of science or arts in history.
-<p>
-
-
-
-
-.
-.
-
-</p>
-<p>
-
-
-
-
-.
-.
-
-</p>
-<p>
-
-
-
-
-.
-.
-
-</p>
+</br>
 
 ## ----
 
