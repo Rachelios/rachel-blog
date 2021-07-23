@@ -117,11 +117,10 @@ rome <- pantheon_i30_rome %>%
 	
 </figure>
 
-As next steps, it would be good to know how cities and countries have shifted in prominence and which region were the centers of science or arts in history.
+As next steps, it would be good to know how cities and countries have shifted in prominence and which region were the centers of science or arts in history. 
+I would also want to spend time looking into the most latest Pantheon data (v2, updated 2020) (https://pantheon.world/data/datasets) and revisit above understandings. 
+The world never stops being VUCA though...
 
-</br>
-</br>
-</br>
 </br>
 </br>
 </br>
