@@ -127,8 +127,26 @@ As next steps, it would be good to know how cities and countries have shifted in
 .
 
 </p>
+<p>
 
-----
+
+
+
+.
+.
+
+</p>
+<p>
+
+
+
+
+.
+.
+
+</p>
+
+## ----
 
 Thanks for reading! You can find [my Rmarkdown code here](https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/pantheon_popularity).
 
