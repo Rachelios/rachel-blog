@@ -149,5 +149,4 @@ Trying some code with bokeh.
 That’s all from me today. It’s your turn. Raise your hand, shine some light, and share your hard work with the world ^^
 
 
-
-*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium].*
+*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*

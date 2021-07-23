@@ -57,4 +57,4 @@ Trong các thể loại mối quan hệ, mình hay có những kỳ vọng mà m
 
 Một tuần nữa là hết tháng một, hy vọng là mùa đông cùng mùa dịch cũng hết luôn để mùa xuân tươi đẹp và ấm áp của mình tới. Tết ở Đà Nẵng làm mình mới thật sự yêu quý những phút giây dạo phố và tận hưởng cảm giác được yêu quý bởi mọi người xung quanh. Mong sao một ngày hoa nở nắng ấm mình sẽ như một con gấu bừng tỉnh lú đầu ra khỏi hang và nói “A, xuân về ” (trong tiếng gấu). Cho đến khi đó, bọn mình hãy giữ gìn sức khoẻ, suy nghĩ tích cực, mên mến nhau vượt qua mùa corona nha!
 
-Lắng nghe một bản nhạc đẹp tên là [“When I’m close to you”] (https://youtu.be/Dc4MB5Fo7ZM).
+Lắng nghe một bản nhạc đẹp tên là [When I’m close to you](https://youtu.be/Dc4MB5Fo7ZM) . 
