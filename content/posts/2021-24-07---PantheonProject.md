@@ -74,6 +74,10 @@ Today I will again plot this popularity index by country in bubble chart, with s
 	
 </figure>
 
+
+
+
+
 <p>
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.</p>
 
@@ -85,7 +89,7 @@ Not so surprised as a cultural diversified city, New York demonstrates cultural 
 
 ![tokyo.jpg](/media/tokyo.jpg)
 
-The key code that I used to plot:
+The key code that I used to plot: basically ggplot() and coord_polar()
 
 ```python
 rome <- pantheon_i30_rome %>%

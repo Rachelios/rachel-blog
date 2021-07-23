@@ -154,7 +154,7 @@ figcaption {
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {
-    max-width: 310px;
+    max-width: 500px;
     @include padding(0, 1, 0, 1);
   }
 
