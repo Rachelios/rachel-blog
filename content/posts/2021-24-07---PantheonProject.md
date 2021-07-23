@@ -69,10 +69,25 @@ Today I will again plot this popularity index by country in bubble chart, with s
 	
 </figure>
 
-<p>
-Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.</p>
 
-![paris.jpg](/media/paris.jpg)
+Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. 
+<p>
+
+
+
+</p>
+
+<figure class="float-right" style="width: 400">
+	<img src="/media/paris.jpg" alt="Paris">
+	
+</figure>
+
+Paris, The City of Lights, in comparison has more influencing figures in Arts with notable people such as Voltaire, Louis XIV of France, Claude Monet.
+<p>
+
+
+
+</p>
 
 
 Not so surprised as a cultural diversified city, New York demonstrates cultural influence in all domains, from Humanities to Sports to Science & Technology. 
