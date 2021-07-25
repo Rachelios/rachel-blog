@@ -9,7 +9,7 @@ tags:
   - "R"
   - "correlation heatmap"
   - "world happiness index"
-description: "Philosophers from Aristotle to the Beatles have argued that money does not buy happiness. And it does seem to hold true for me. On my way seeking to answer this seemingly simple yet paralyzing profound question, I turned to science (by that I mean google around the internet, oh millennials!) and came across the World Happiness Report."
+description: "Philosophers from Aristotle to the Beatles have argued that money does not buy happiness. And it does seem to hold true for me. On my way seeking to answer this seemingly simple yet paralyzing profound question, I turned to science and came across the World Happiness Report."
 socialImage: "/media/global_bubble_happiness.jpg"
 ---
 
@@ -71,14 +71,14 @@ The global average for both GDP and Happiness is at the centre of the quadrants.
 ![continent.jpg](/media/continentjpg)
 
 According to the chart, world’s happiest country in 2020 was Finland and the unhappiest country was South Sudan.
+
 Countries like Hong Kong, Greece and Croatia have an above average GDP per capita but below average happiness score. All South America countries (except Haiti) have a high happiness score despite most having a below average GDP per capita.
 
 Maybe money isn’t everything to everyone. 
 
 What are other factors, then?
 
-
-## Other Explanatory Features
+## Happiness's Explanatory Features
 
 GDP: GDP per capita is a measure of Gross Domestic Product per its population.
 
