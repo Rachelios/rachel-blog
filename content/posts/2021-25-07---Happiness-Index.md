@@ -95,7 +95,7 @@ Corruption/Gov Trust: The Corruption Perceptions Index (CPI), an index published
 
 ## Checking Out the Correlation Among Explanatory Variables
 
-Though money doesn’t buy happiness, it seems to help. (An old paradox, per The Economist https://www.economist.com/graphic-detail/2019/03/21/economic-growth-does-not-guarantee-rising-happiness). As shown below, GDP, Health, and Support are strongly correlated with the Happiness score. Freedom correlates quite well with the Happiness score; however, Freedom connects quite well with all data. Corruption still has a mediocre correlation with the Happiness score.
+Though money doesn’t buy happiness, it seems to help. (An old paradox, [per The Economist](https://www.economist.com/graphic-detail/2019/03/21/economic-growth-does-not-guarantee-rising-happiness) ). As shown below, GDP, Health, and Support are strongly correlated with the Happiness score. Freedom correlates quite well with the Happiness score; however, Freedom connects quite well with all data. Corruption still has a mediocre correlation with the Happiness score.
 
 ![happiness-correlation.jpg](/media/corr_happiness.jpg)
 

@@ -64,26 +64,37 @@ After the polar [hclust chart](https://heyiamrachel.com/posts/shift-in-alcohol-c
 Today I will again plot this popularity index by country in bubble chart, with size of the bubbles indicating the magnitude of popularity index and coordinate them to a single node with the length of the lines indicating number of languages. 
 
 ![rome.jpg](/media/rome.jpg)
+![domain.jpg](/media/domain.jpg)
 
 Interestingly, majority of records in Rome are in Institution category, probably due to its many Popes. 
 
 ![paris.jpg](/media/paris.jpg)
+![domain.jpg](/media/domain.jpg)
 Paris, The City of Lights, in comparison has more influencing figures in Arts and Humanities with notable people such as Voltaire, Louis XIV of France, Claude Monet.
 
 ![newyork.jpg](/media/newyork.jpg)
+![domain.jpg](/media/domain.jpg)
 
 Not so surprised as a cultural diversified city, New York demonstrates cultural influence in all domains, from Humanities to Sports to Science & Technology. 
 
 ![london.jpg](/media/london.jpg)
+![domain.jpg](/media/domain.jpg)
 
 London exerts a quite dominant of influence in Arts and Science and one of the cities with the most notable female figures while Tokyo is  the birthplace of historically renowned emperors like Hirohito, Akihito.
 
 ![tokyo.jpg](/media/tokyo.jpg)
+![domain.jpg](/media/domain.jpg)
 
 The key code that I used to plot: basically ggplot() and coord_polar()
 
 ```python
-rome <- pantheon_i30_rome %>%
+tiff("los angeles.jpg", width = 5, height = 5, units = 'in', res = 500)
+pantheon_i30_LA<- pantheon_i30 %>%
+  filter(city %in% c('Los Angeles')) %>%
+  arrange(desc(historical_popularity_index)) 
+
+# tiff("Rome.tiff", width = 5, height = 5, units = 'in', res = 500)
+ pantheon_i30_LA %>%
   ggplot()  +
   #historical_popularity_index/20
   geom_segment(aes(y = 0, 
@@ -92,7 +103,7 @@ rome <- pantheon_i30_rome %>%
                    xend =  birth_year),
                    color = "lightgrey", size=0.5) +
   
-  #use marginal border 
+  #use marginal border to different gender
   geom_point(aes(x=birth_year, 
              y=article_languages, 
              size=historical_popularity_index/20 +0.4),
@@ -105,15 +116,17 @@ rome <- pantheon_i30_rome %>%
              alpha=0.85, inherit.aes = FALSE) +  ylim(-10,120) + 
   coord_polar() + facet_grid(.~city,switch="both") + 
   #geom_text(aes(label = city), x = 0, y = 0, hjust = 0.5, vjust = 2, size=4.5, fontface = "plain",family = "Poppins") +
-  annotate("text", x = 0, y = 0, hjust = 0.5, vjust = 1.5, label="Rome", size=6, fontface = "plain",family = "Cinzel",inherit.aes = FALSE) +
+  annotate("text", x = 0, y = 0, hjust = 0.5, vjust = 1.5, label="LA", size=6, fontface = "plain",family = "Cinzel",inherit.aes = FALSE) +
   theme_void() + 
   my_theme() +
   #geom_text(data=pantheon_i50_rome, aes(x = 0, y = -18, label=city), colour = "black", alpha=0.8, size=4, fontface="bold", inherit.aes = FALSE) +
-  scale_color_manual(values=c("#f7347a", "#ffdfba","#7408bb", "#bae1ff", "#800000", "#ffb3ba","#ffa500"))
+  scale_color_manual(values=c("#f7347a", "#ffdfba","#7408bb", "#bae1ff", "#800000", "#ffb3ba","#ffa500","#ffa500", "#3b5998"))
+
+dev.off()
 ```
 
 <figure class="float-left" style="width: 400">
-	<img src="/media/paris.jpg" alt="Paris">
+	<img src="/media/los angeles.jpg" alt="Los Angles">
 	
 </figure>
 
@@ -128,6 +141,6 @@ The world never stops being VUCA though...
 
 ## ----
 
-Thanks for reading! You can find [my Rmarkdown code here](https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/pantheon_popularity).
+Thanks for reading! You can find [my R markdown code here](https://github.com/Rachelios/A-cup-of-tea-and-a-good-book/tree/master/pantheon_popularity).
 
 *Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*
