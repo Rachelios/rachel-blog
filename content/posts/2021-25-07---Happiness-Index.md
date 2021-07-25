@@ -68,7 +68,8 @@ df1 %>%
 The global average for both GDP and Happiness is at the centre of the quadrants. 
 
 ![global_bubble_happiness.jpg](/media/global_bubble_happiness.jpg)
-![continent.jpg](/media/continentjpg)
+
+![continent.jpg](/media/continent.jpg)
 
 According to the chart, world’s happiest country in 2020 was Finland and the unhappiest country was South Sudan.
 
@@ -118,7 +119,7 @@ Below I looked into how countries globally, and in each continents are doing in 
 ![africa_happiness.jpg](/media/africa_happiness.jpg)
 
 ## Oceania
-![oceania_happiness.jpg](/media/oceania_happinessjpg)
+![oceania_happiness.jpg](/media/oceania_happiness.jpg)
 
 </br>
 
