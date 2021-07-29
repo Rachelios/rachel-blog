@@ -14,17 +14,6 @@ socialImage: "/media/global_bubble_happiness.jpg"
 ---
 
 
-<figure>
-	<blockquote>
-		<p>“I wish to you, joy and happiness. 
-    </br>
-      But above all this, I wish you: love”
-    </p>
-		<footer>
-			<cite>— Whitney Houston</cite>
-		</footer>
-	</blockquote>
-</figure>
 
 Lately as quarter life crisis hits me hard, I’ve been engulfed in the awareness of inescapable impermanence desperately finding the meaning of life, defining my ultimate happiness. What could make me happy, truly, faithfully, and substantially that the inevitable death awaiting me does not destroy, then?
 
@@ -143,5 +132,16 @@ What makes me happy is when I’m useful. Okay, but how? When I was young I hope
 For people who are suffering life crisis, please step up. You can do anything, like painting, creating a product, supporting your family and friends, anything you feel like doing. And the most important, believe in yourself. Just do something useful. Anything.
 
 
+<figure>
+	<blockquote>
+		<p>“I wish to you, joy and happiness. 
+    </br>
+      But above all this, I wish you: love”
+    </p>
+		<footer>
+			<cite>— Whitney Houston</cite>
+		</footer>
+	</blockquote>
+</figure>
 
 *Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*
