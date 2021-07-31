@@ -144,4 +144,4 @@ For people who are suffering life crisis, please step up. You can do anything, l
 	</blockquote>
 </figure>
 
-*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/shift-in-alcohol-consumption-ba14a24a10cf).*
+*Originally published by [Rachel Le](http://heyiamrachel.com/) on [Medium](https://lenguyenbichngoc95.medium.com/into-world-happiness-index-with-r-dd1bb5f1b273).*
