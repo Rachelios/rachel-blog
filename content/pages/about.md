@@ -7,5 +7,5 @@ socialImage: "/media/image-2.jpg"
 
 Me? Basically, a beautiful mind!
 
-Please visit my [Portfolio Page](https://heyiamrachel.gatsbyjs.io/)
+Please visit my [Portfolio Page]([https://heyiamrachel.gatsbyjs.io/](https://rachelios-spaceship.vercel.app/))
 ![Rachel's Portfolio](/media/portfolio-page.jpg)
