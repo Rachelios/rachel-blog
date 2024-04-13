@@ -21,7 +21,7 @@ module.exports = {
     },
     {
       label: 'My Portfolio',
-      path: 'https://heyiamrachel.gatsbyjs.io/'
+      path: 'https://rachelios-spaceship.vercel.app/'
     }
   ],
   author: {
