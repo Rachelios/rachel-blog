@@ -10,7 +10,7 @@ tags:
   - "Mùa Xuân"
   - "Daily Thoughts"
 description: "Một vài người đôi khi đổ lỗi cho con đường, cho chiếc xe, tàu bay đã đưa người ra đi ấy, nhưng ngẫm lại thì có đâu khi nếu đã quyết chí ra đi, cần gì con đường, cần gì tàu xe mới đi được, mới khuất lấp muôn trùng cách trở"
-socialImage: "./image.jpg"
+socialImage: "./image.png"
 ---
 
 “Có lẽ em chẳng khóc chút nào, và cũng chẳng quan tâm anh ra sao
