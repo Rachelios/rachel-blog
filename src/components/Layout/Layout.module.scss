@@ -1,6 +1,9 @@
-@import '../../assets/scss/variables';
-@import '../../assets/scss/mixins';
+@use "src/assets/styles/variables";
 
 .layout {
-    lost-center: $layout-width;
+  display: grid;
+  margin: 0 auto;
+  gap: variables.$layout-gap;
+  max-width: variables.$layout-width;
+  grid-template-columns: repeat(12, 1fr);
 }

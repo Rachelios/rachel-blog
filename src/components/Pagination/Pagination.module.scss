@@ -1,54 +1,49 @@
-@import '../../assets/scss/variables';
-@import '../../assets/scss/mixins';
+@use "src/assets/styles/mixins";
+@use "src/assets/styles/variables";
 
 .pagination {
-  @include margin-top(2);
   display: flex;
+  @include mixins.margin-top(2);
 
-  &__prev {
-    width: 50%;
+  .previous {
     text-align: left;
-
-    &-link {
-      color: $color-secondary;
-      font-size: 26px;
-      font-weight: bold;
-
-      &:hover,
-      &:focus {
-        color: $color-primary;
-      }
-
-      &--disable {
-        pointer-events: none;
-        color: lighten($color-gray, 20%);
-      }
-
-    }
-
-  }
-
-  &__next {
     width: 50%;
-    text-align: right;
 
-    &-link {
-      color: $color-secondary;
+    .previousLink {
+      color: hsl(var(--color-foreground));
       font-size: 26px;
       font-weight: bold;
 
       &:hover,
       &:focus {
-        color: $color-primary;
+        color: hsl(var(--color-primary));
       }
 
-      &--disable {
+      &.disable {
+        color: hsl(var(--color-muted-foreground));
         pointer-events: none;
-        color: lighten($color-gray, 20%);
       }
-
     }
-
   }
 
+  .next {
+    text-align: right;
+    width: 50%;
+
+    .nextLink {
+      color: hsl(var(--color-foreground));
+      font-size: 26px;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: hsl(var(--color-primary));
+      }
+
+      &.disable {
+        color: hsl(var(--color-muted-foreground));
+        pointer-events: none;
+      }
+    }
+  }
 }

@@ -1,49 +1,45 @@
-@import '../../assets/scss/variables';
-@import '../../assets/scss/mixins';
+@use "src/assets/styles/mixins";
+@use "src/assets/styles/variables";
 
 .page {
-  @include margin-bottom(2);
+  grid-column: span 12;
+  @include mixins.margin-bottom(2);
 
-  &__inner {
-    padding: 25px 20px;
+  .inner {
+    @include mixins.padding(1, 0.75, 0);
   }
 
-  &__title {
-    font-size: $typographic-base-font-size * 2.5;
+  .title {
     font-weight: 600;
-    @include line-height(2);
-    @include margin-top(0);
-    @include margin-bottom(1.45);
+    font-size: variables.$typography-base-font-size * 2.5;
+    @include mixins.line-height(2);
+    @include mixins.margin-top(0);
+    @include mixins.margin-bottom(1.45);
   }
 
-  &__body {
-    font-size: $typographic-base-font-size;
-    @include line-height(1);
-    @include margin(0, 0, 1);
+  .body {
+    font-size: variables.$typography-base-font-size;
+    @include mixins.line-height(1);
+    @include mixins.margin(0, 0, 1);
   }
-
 }
 
-@include breakpoint-sm {
+@include mixins.breakpoint-sm {
   .page {
-    lost-column: 7/12;
+    grid-column: span 7;
 
-    &__inner {
-      padding: 30px 20px;
+    .inner {
+      @include mixins.padding(1.25, 0.75, 0);
     }
-
   }
-
 }
 
-@include breakpoint-md {
+@include mixins.breakpoint-lg {
   .page {
-    lost-column: 2/3;
+    grid-column: span 8;
 
-    &__inner {
-      padding: 40px 35px;
+    .inner {
+      @include mixins.padding(1.5, 1, 0);
     }
-
   }
-
 }

@@ -1,81 +1,69 @@
-@import '../../assets/scss/variables';
-@import '../../assets/scss/mixins';
+@use "src/assets/styles/mixins";
+@use "src/assets/styles/variables";
 
 .feed {
-  &__item {
-    @include margin-bottom(1.25);
+  .item {
+    @include mixins.margin-bottom(1.25);
 
     &:last-child {
-      @include margin-bottom(.5);
+      @include mixins.margin-bottom(0.5);
     }
 
-    &-title {
-      font-size: $typographic-base-font-size * 1.6875;
-      @include line-height(1.5);
-      @include margin-top(0);
-      @include margin-bottom(.5);
+    .title {
+      font-size: variables.$typography-base-font-size * 1.6875;
+      @include mixins.line-height(1.5);
+      @include mixins.margin-top(0);
+      @include mixins.margin-bottom(0.5);
 
-      &-link {
-        color: $color-base;
+      .link {
+        color: hsl(var(--color-foreground));
 
         &:hover,
         &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          border-bottom: 1px solid hsl(var(--color-foreground));
+          color: hsl(var(--color-foreground));
         }
-
       }
-
     }
 
-    &-description {
-      font-size: $typographic-base-font-size;
-      @include line-height(1);
-      @include margin-bottom(.75);
+    .description {
+      color: hsl(var(--color-muted-foreground));
+      font-size: variables.$typography-base-font-size;
+      @include mixins.line-height(1);
+      @include mixins.margin-bottom(0.75);
     }
 
-    &-meta {
-      &-time {
-        font-size: $typographic-small-font-size;
-        color: $color-base;
+    .meta {
+      .time {
+        color: hsl(var(--color-foreground));
+        font-size: variables.$typography-small-font-size;
         font-weight: 600;
         text-transform: uppercase;
       }
 
-      &-divider {
-        margin: 0 5px;
+      .divider {
+        @include mixins.margin(0, 0.5);
       }
 
-      &-category {
-        &-link {
-          font-size: $typographic-small-font-size;
-          color: $color-secondary;
+      .category {
+        .link {
           font-weight: 600;
           text-transform: uppercase;
-
-          &:hover,
-          &:focus {
-            color: $color-primary;
-          }
-
+          color: hsl(var(--color-primary));
+          font-size: variables.$typography-small-font-size;
         }
-
       }
-
     }
 
-    &-readmore {
-      font-size: $typographic-base-font-size;
-      color: $color-primary;
+    .more {
+      color: hsl(var(--color-foreground));
+      font-size: variables.$typography-base-font-size;
 
       &:hover,
       &:focus {
-        color: $color-primary;
-        border-bottom: 1px solid $color-primary;
+        border-bottom: 1px solid hsl(var(--color-primary));
+        color: hsl(var(--color-primary));
       }
-
     }
-
   }
-
 }

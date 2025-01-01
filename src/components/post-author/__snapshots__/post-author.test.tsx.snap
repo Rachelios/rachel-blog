@@ -1,0 +1,44 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostAuthor renders correctly 1`] = `
+{
+  "$$typeof": Symbol(react.test.json),
+  "children": [
+    {
+      "$$typeof": Symbol(react.test.json),
+      "children": [
+        "A cup of tea and a good book",
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": [
+                "Rachel Le",
+              ],
+              "props": {},
+              "type": "strong",
+            },
+            " on X",
+          ],
+          "props": {
+            "className": undefined,
+            "href": "https://www.x.com/#",
+            "rel": "noopener noreferrer",
+            "target": "_blank",
+          },
+          "type": "a",
+        },
+      ],
+      "props": {
+        "className": undefined,
+      },
+      "type": "p",
+    },
+  ],
+  "props": {
+    "className": undefined,
+  },
+  "type": "div",
+}
+`;

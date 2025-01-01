@@ -1,0 +1,38 @@
+{
+  "title": "Blog by Rachel Le",
+  "url": "https://heyiamrachel.com",
+  "description": "A cup of tea and a good book",
+  "copyright": "© Rachel Le 2025",
+  "googleAnalyticsId": "UA-73379983-2",
+  "pathPrefix": "/",
+  "feedLimit": 4,
+  "menu": [
+    {
+      "title": "Articles",
+      "url": "/"
+    },
+    {
+      "title": "About me",
+      "url": "/pages/about"
+    },
+    {
+      "title": "My Portfolio",
+      "url": "https://rachelios-spaceship.vercel.app/"
+    }
+  ],
+  "author": {
+    "title": "Rachel Le",
+    "photo": "/logo.png",
+    "description": "A cup of tea and a good book",
+    "contacts": [
+      {
+        "name": "github",
+        "contact": "rachelios"
+      },
+      {
+        "name": "linkedin",
+        "contact": "hey-i-am-rachel"
+      }
+    ]
+  }
+}
