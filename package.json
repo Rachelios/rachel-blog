@@ -1,19 +1,12 @@
 {
-  "name": "lumen",
+  "name": "rachel",
   "version": "2.0.17",
-  "description": "A constantly evolving and thoughtful architecture for creating static blogs",
   "keywords": [
     "gatsby",
     "graphql",
     "react",
     "blog"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alxshelepenok/lumen.git"
-  },
-  "license": "MIT",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "scripts": {
     "test": "bun test",
     "serve": "gatsby serve",
